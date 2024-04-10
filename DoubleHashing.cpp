@@ -67,7 +67,7 @@ public:
   // Function to display the contents of the hash table
   void display() {
     for (int i = 0; i < hashTableSize; i++) {
-      cout << table[i] << " ";
+      cout <<i<<" "<< table[i] << " ";
     }
     cout << endl;
   }
@@ -79,11 +79,7 @@ int main() {
 
     do {
         cout << "\nMenu:";
-        cout << "\n1. Insert a key";
-        cout << "\n2. Delete a key";
-        cout << "\n3. Display hash table";
-        cout << "\n4. Exit";
-        cout << "\nEnter your choice: ";
+        cout << "\n1. Insert a key\n2. Delete a key\n3. Display hash table\n4. Exit\nEnter your choice: ";
         cin >> choice;
 
         switch (choice) {

@@ -45,17 +45,15 @@ void display(Polynomial start) {
 }
 
 Polynomial addTerm(Polynomial res, int co, int po) {
-    Node* temp = createNode(co, po);
 
     if (res == nullptr) {
-        return temp;
+        return createNode(co, po);
     }
 
     Node* cur = res;
     while (cur != nullptr) {
         if (cur->po == po) {
             cur->co += co;
-            delete temp;
             return res;
         }
         cur = cur->addr;
